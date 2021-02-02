@@ -41,19 +41,16 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
   cursor: pointer; }
 
 a:hover {
   text-decoration: underline; }
 
-a:focus {
-  outline: thin dotted; }
-
 ul,
-ol,
-dd {
+ol {
   margin: 0;
-  padding: 1rem;
+  padding: .5rem;
   list-style: none; }
 
 button {
@@ -62,33 +59,12 @@ button {
   padding: 0;
   cursor: pointer; }
 
-img,
-video {
+img {
   max-width: 100%;
   height: auto; }
 
-figure {
-  margin: 0; }
-
-figcaption {
-  font-size: 0.9em; }
-
-cite {
-  font-style: normal; }
-
-fieldset {
-  border-width: 0;
-  padding: 0;
-  margin: 0; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 input,
-button,
-textarea,
-select {
+button {
   box-sizing: border-box;
   margin: 0.25em 0;
   display: inline-block;
@@ -100,12 +76,17 @@ select {
 body {
   font-family: "Manrope", sans-serif;
   background: #080c20;
-  color: #ffffff;
-  font-weight: 200;
-  font-size: 15px;
+  color: #777f98;
   line-height: 25px;
   text-align: center; }
 
 h1 {
   font-weight: 800;
-  font-size: 32px; }
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff; }
+
+p {
+  font-weight: 200;
+  font-size: 15px;
+  color: #777f98; }
