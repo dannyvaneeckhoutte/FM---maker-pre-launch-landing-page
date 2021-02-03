@@ -1,4 +1,4 @@
-@import "../scss/reset.scss";
+// @import "../scss/reset.scss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 // Colors
 $white: #ffffff;
@@ -8,78 +8,188 @@ $blue-med: #093f68;
 $blue-light: #3ee9e5;
 $red: #ff2965;
 // Typography
-$font-family: "Manrope",
-sans-serif;
-body {
-    font-family: $font-family;
-    background: $black;
-    color: $grey;
-    line-height: 25px;
-    text-align: center;
-}
+$font-family: "Manrope", sans-serif;
 
 h1,
 h2,
 h3 {
-    font-weight: 800;
-    color: $white;
+	font-weight: 800;
+	color: $white;
+	margin: 0;
 }
 
 h1 {
-    font-size: 32px;
-    line-height: 40px;
+	font-size: 32px;
+	line-height: 40px;
 }
 
 h2 {
-    font-size: 24px;
-    line-height: 32.8px;
+	font-size: 24px;
+	line-height: 32.8px;
 }
 
 h3 {
-    font-size: 18px;
-    line-height: 24.6px;
+	font-size: 18px;
+	line-height: 24.6px;
 }
 
 p {
-    font-weight: 200;
-    font-size: 15px;
-    color: $grey;
+	font-weight: 200;
+	font-size: 15px;
+	color: $grey;
+}
+
+// Styling
+
+body {
+	font-family: $font-family;
+	background: $black;
+	color: $grey;
+	line-height: 25px;
+	text-align: center;
 }
 
 header {
-    .logo {
-        padding: 40px 0 50px;
-    }
+	.logo {
+		padding: 40px 0 50px;
+	}
 }
 
 .hero {
-    .hero-txt {
-        padding: 0 24px;
-    }
-    h1 {
-        padding: 40px 40px 0;
-        span {
-            color: $blue-light;
-        }
-    }
-    p {
-        padding: 15px 0 20px;
-    }
+	.hero-img {
+		width: 100vw;
+	}
+	.hero-txt {
+		padding: 0 24px;
+	}
+	h1 {
+		padding: 40px 30px 0;
+		span {
+			color: $blue-light;
+		}
+	}
+	p {
+		padding: 15px 0 20px;
+	}
 }
 
 main {
-    padding: 24px;
-    section {
-        padding-top: 80px;
-        .features {
-            .card {
-                .image-bg {
-                    width: 120px;
-                    height: 120px;
-                    padding: 40px;
-                    background-color: $blue-med;
-                }
-            }
-        }
-    }
+	padding: 20px;
+	section {
+		padding-top: 80px;
+		&.features {
+			margin-bottom: 3rem;
+			.card {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 0.2rem;
+				.image-bg {
+					display: inline-block;
+					width: 120px;
+					height: 124px;
+					border-radius: 2.8rem;
+					background-color: $blue-med;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 2rem;
+					img {
+						width: 60%;
+						padding: 1.2rem;
+					}
+				}
+			}
+		}
+		&.pricing {
+			h2 {
+				margin-bottom: 1.6rem;
+			}
+			.pricing-card {
+				text-align: left;
+				padding: 0.2rem 1.8rem 0;
+				border-radius: 0.6rem;
+				h1 {
+					font-size: 40px;
+					margin: 4rem 0 1.5rem;
+				}
+				p {
+					color: $white;
+				}
+				ul {
+					padding: 0 0 1.4rem;
+					list-style: none;
+					li {
+						color: $white;
+						padding: 0.35rem 0;
+						.fas {
+							color: $blue-light;
+							font-size: 0.7rem;
+							margin-right: 0.6rem;
+						}
+					}
+				}
+				&.pricing-card-free {
+					background-color: $blue-med;
+					margin-top: 5rem;
+					h3 {
+						margin-top: 3rem;
+					}
+				}
+				&.pricing-card-25 {
+					background: $blue-light;
+					padding-top: 4rem;
+					margin-top: 4rem;
+					h3,
+					h1,
+					p,
+					li {
+						color: $black;
+					}
+					span {
+						padding-left: 0.4rem;
+						font-size: 15px;
+						font-weight: 200;
+					}
+					h1 {
+						display: flex;
+						margin-top: 2rem;
+					}
+					.fas {
+						color: $blue-med;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	margin-top: 5rem;
+	padding: 2rem;
+	.footer-txt {
+		padding: 0 2rem;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1rem;
+		input {
+			padding: 1rem;
+			border: none;
+			border-radius: 2rem;
+			margin: 0.8rem 0;
+			font-weight: 800;
+			font-size: inherit;
+			&[type="email"] {
+				background-color: $blue-med;
+				color: $white;
+			}
+			&[type="button"] {
+				background-color: $blue-light;
+				color: $black;
+			}
+		}
+	}
 }

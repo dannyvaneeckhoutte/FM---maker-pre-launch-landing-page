@@ -1,90 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-html,
-body {
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  line-height: 1.4; }
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important; } }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 0.65rem; }
-
-h1 {
-  font-size: 1.65em;
-  /* Default size === h2 */ }
-
-p {
-  margin: 0 0 0.55rem; }
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer; }
-
-a:hover {
-  text-decoration: underline; }
-
-ul,
-ol {
-  margin: 0;
-  padding: .5rem;
-  list-style: none; }
-
-button {
-  color: inherit;
-  border-width: 0;
-  padding: 0;
-  cursor: pointer; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-input,
-button {
-  box-sizing: border-box;
-  margin: 0.25em 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  font: inherit;
-  line-height: 1; }
-
-body {
-  font-family: "Manrope", sans-serif;
-  background: #080c20;
-  color: #777f98;
-  line-height: 25px;
-  text-align: center; }
-
 h1,
 h2,
 h3 {
   font-weight: 800;
-  color: #ffffff; }
+  color: #ffffff;
+  margin: 0; }
 
 h1 {
   font-size: 32px;
@@ -103,24 +23,116 @@ p {
   font-size: 15px;
   color: #777f98; }
 
+body {
+  font-family: "Manrope", sans-serif;
+  background: #080c20;
+  color: #777f98;
+  line-height: 25px;
+  text-align: center; }
+
 header .logo {
   padding: 40px 0 50px; }
 
+.hero .hero-img {
+  width: 100vw; }
 .hero .hero-txt {
   padding: 0 24px; }
 .hero h1 {
-  padding: 40px 40px 0; }
+  padding: 40px 30px 0; }
   .hero h1 span {
     color: #3ee9e5; }
 .hero p {
   padding: 15px 0 20px; }
 
 main {
-  padding: 24px; }
+  padding: 20px; }
   main section {
     padding-top: 80px; }
-    main section .features .card .image-bg {
-      width: 120px;
-      height: 120px;
-      padding: 40px;
-      background-color: #093f68; }
+    main section.features {
+      margin-bottom: 3rem; }
+      main section.features .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2rem; }
+        main section.features .card .image-bg {
+          display: inline-block;
+          width: 120px;
+          height: 124px;
+          border-radius: 2.8rem;
+          background-color: #093f68;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 2rem; }
+          main section.features .card .image-bg img {
+            width: 60%;
+            padding: 1.2rem; }
+    main section.pricing h2 {
+      margin-bottom: 1.6rem; }
+    main section.pricing .pricing-card {
+      text-align: left;
+      padding: 0.2rem 1.8rem 0;
+      border-radius: 0.6rem; }
+      main section.pricing .pricing-card h1 {
+        font-size: 40px;
+        margin: 4rem 0 1.5rem; }
+      main section.pricing .pricing-card p {
+        color: #ffffff; }
+      main section.pricing .pricing-card ul {
+        padding: 0 0 1.4rem;
+        list-style: none; }
+        main section.pricing .pricing-card ul li {
+          color: #ffffff;
+          padding: 0.35rem 0; }
+          main section.pricing .pricing-card ul li .fas {
+            color: #3ee9e5;
+            font-size: 0.7rem;
+            margin-right: 0.6rem; }
+      main section.pricing .pricing-card.pricing-card-free {
+        background-color: #093f68;
+        margin-top: 5rem; }
+        main section.pricing .pricing-card.pricing-card-free h3 {
+          margin-top: 3rem; }
+      main section.pricing .pricing-card.pricing-card-25 {
+        background: #3ee9e5;
+        padding-top: 4rem;
+        margin-top: 4rem; }
+        main section.pricing .pricing-card.pricing-card-25 h3,
+        main section.pricing .pricing-card.pricing-card-25 h1,
+        main section.pricing .pricing-card.pricing-card-25 p,
+        main section.pricing .pricing-card.pricing-card-25 li {
+          color: #080c20; }
+        main section.pricing .pricing-card.pricing-card-25 span {
+          padding-left: 0.4rem;
+          font-size: 15px;
+          font-weight: 200; }
+        main section.pricing .pricing-card.pricing-card-25 h1 {
+          display: flex;
+          margin-top: 2rem; }
+        main section.pricing .pricing-card.pricing-card-25 .fas {
+          color: #093f68; }
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem; }
+  footer .footer-txt {
+    padding: 0 2rem; }
+  footer form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem; }
+    footer form input {
+      padding: 1rem;
+      border: none;
+      border-radius: 2rem;
+      margin: 0.8rem 0;
+      font-weight: 800;
+      font-size: inherit; }
+      footer form input[type="email"] {
+        background-color: #093f68;
+        color: #ffffff; }
+      footer form input[type="button"] {
+        background-color: #3ee9e5;
+        color: #080c20; }
