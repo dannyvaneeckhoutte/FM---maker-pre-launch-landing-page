@@ -110,6 +110,16 @@ main {
 				text-align: left;
 				padding: 0.2rem 1.8rem 0;
 				border-radius: 0.6rem;
+				.icon-free,
+				.icon-paid {
+					position: relative;
+				}
+				.icon-free {
+					top: -1.8rem;
+				}
+				.icon-paid {
+					top: -6rem;
+				}
 				h1 {
 					font-size: 40px;
 					margin: 4rem 0 1.5rem;
@@ -167,28 +177,39 @@ main {
 
 footer {
 	margin-top: 5rem;
-	padding: 2rem;
+	padding: 1rem;
 	.footer-txt {
-		padding: 0 2rem;
+		padding: 0 3rem;
 	}
 	form {
 		display: flex;
 		flex-direction: column;
 		margin-top: 1rem;
+		width: 327px;
 		input {
+			user-select: none;
 			padding: 1rem;
-			border: none;
+			border: 2px transparent;
 			border-radius: 2rem;
 			margin: 0.8rem 0;
 			font-weight: 800;
 			font-size: inherit;
+			&:focus {
+				background-color: $blue-med;
+			}
 			&[type="email"] {
 				background-color: $blue-med;
 				color: $white;
 			}
 			&[type="button"] {
 				background-color: $blue-light;
+				cursor: pointer;
 				color: $black;
+				&:hover {
+					background-color: $black;
+					color: $white;
+					border: 2px solid $blue-light;
+				}
 			}
 		}
 	}
