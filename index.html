@@ -1,150 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/favicon-32x32.png"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-			integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="/css/main.css" />
-		<title>Frontend Mentor | Maker pre-launch landing page</title>
-	</head>
 
-	<body>
-		<header>
-			<img class="logo" src="/assets/logo.svg" alt="Logo" />
-		</header>
-		<hero class="hero">
-			<img
-				class="hero-img"
-				src="/assets/illustration-hero-mobile.png"
-				alt="hero image"
-			/>
-			<div class="hero-txt">
-				<h1>Get paid for the work you <span>love</span> to do.</h1>
-				<p>
-					The 9-5 grind is so last century. We believe in living life on your
-					own terms. Whether you’re looking to escape the rat race or set up a
-					side hustle, we’ve got you covered.
-				</p>
-			</div>
-			<img src="/assets/icon-scroll.svg" alt="scroll icon" />
-		</hero>
-		<main>
-			<section class="features">
-				<div class="card card-passion">
-					<div class="image-bg">
-						<img src="/assets/illustration-passions.svg" alt="Passion" />
-					</div>
-					<h3>Indulge your passions</h3>
-					<p>
-						Your passions shouldn't be just for the weekend. Earn a living doing
-						what you love.
-					</p>
-				</div>
-				<div class="card card-freedom">
-					<div class="image-bg">
-						<img
-							src="/assets/illustration-financial-freedom.svg"
-							alt="Freedom"
-						/>
-					</div>
-					<h3>Gain financial freedom</h3>
-					<p>
-						Start making money work for you. There’s nothing quite like earning
-						while you sleep.
-					</p>
-				</div>
-				<div class="card card-lifestyle">
-					<div class="image-bg">
-						<img src="/assets/illustration-lifestyle.svg" alt="Lifestyle" />
-					</div>
-					<h3>Choose your lifestyle</h3>
-					<p>
-						Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
-						your week.
-					</p>
-				</div>
-				<div class="card card-anywhere">
-					<div class="image-bg">
-						<img src="/assets/illustration-work-anywhere.svg" alt="Anywhere" />
-					</div>
-					<h3>Work from anywhere</h3>
-					<p>
-						Selling online means not being pinned down. Want to work AND travel?
-						Go for it!
-					</p>
-				</div>
-			</section>
-			<section class="pricing">
-				<div class="pricing-txt">
-					<h2>Our pricing plans</h2>
-					<p>
-						We only make money when our creators make money. Our plans are
-						always affordable, and it’s completely free to get started.
-					</p>
-				</div>
-				<div class="pricing-card pricing-card-free">
-					<img src="/assets/icon-free.svg" alt="icon free" class="icon-free" />
-					<h3>Dip your toe</h3>
-					<p>
-						Just getting started? No problem at all! Our free plan will take you
-						a long way.
-					</p>
-					<h1>Free</h1>
-					<ul>
-						<li><i class="fas fa-check"></i>&nbsp; Unlimited products</li>
-						<li><i class="fas fa-check"></i>&nbsp; Basic analytics</li>
-						<li>
-							<i class="fas fa-check"></i>&nbsp; Limited marketplace exposure
-						</li>
-						<li><i class="fas fa-check"></i>&nbsp; 10% fee per transaction</li>
-					</ul>
-				</div>
-				<div class="pricing-card pricing-card-25">
-					<img src="/assets/icon-paid.svg" alt="icon paid" class="icon-paid" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Frontend Mentor | Maker pre-launch landing page</title>
+</head>
 
-					<h3>Dive right in</h3>
-					<p>
-						Ready for the big time? Our paid plan will help you take your
-						business to the next level.
-					</p>
-					<h1>$25.00 <span>/month</span></h1>
-					<ul>
-						<li><i class="fas fa-check"></i>&nbsp; Custom domain</li>
-						<li>
-							<i class="fas fa-check"></i>&nbsp; Advanced analytics and reports
-						</li>
-						<li>
-							<i class="fas fa-check"></i>&nbsp; High marketplace visibility
-						</li>
-						<li><i class="fas fa-check"></i>&nbsp; 5% fee per transaction</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div class="footer-txt">
-				<h2>Get notified when we launch</h2>
-			</div>
-			<form action="">
-				<input
-					type="email"
-					name="email"
-					id="email"
-					placeholder="Email adress"
-				/>
-				<input type="button" value="Get notified" />
-			</form>
-		</footer>
-	</body>
+<body>
+    <header>
+        <img class="logo" src="/assets/logo.svg" alt="Logo" />
+    </header>
+    <hero class="hero">
+        <img class="hero-img" src="/assets/illustration-hero-mobile.png" alt="hero image" />
+        <div class="hero-txt">
+            <h1>Get paid for the work you <span>love</span> to do.</h1>
+            <p>
+                The 9-5 grind is so last century. We believe in living life on your own terms. Whether you’re looking to escape the rat race or set up a side hustle, we’ve got you covered.
+            </p>
+        </div>
+        <img src="/assets/icon-scroll.svg" alt="scroll icon" />
+    </hero>
+    <main>
+        <section class="features">
+            <div class="card card-passion">
+                <div class="image-bg">
+                    <img src="/assets/illustration-passions.svg" alt="Passion" />
+                </div>
+                <h3>Indulge your passions</h3>
+                <p>
+                    Your passions shouldn't be just for the weekend. Earn a living doing what you love.
+                </p>
+            </div>
+            <div class="card card-freedom">
+                <div class="image-bg">
+                    <img src="/assets/illustration-financial-freedom.svg" alt="Freedom" />
+                </div>
+                <h3>Gain financial freedom</h3>
+                <p>
+                    Start making money work for you. There’s nothing quite like earning while you sleep.
+                </p>
+            </div>
+            <div class="card card-lifestyle">
+                <div class="image-bg">
+                    <img src="/assets/illustration-lifestyle.svg" alt="Lifestyle" />
+                </div>
+                <h3>Choose your lifestyle</h3>
+                <p>
+                    Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.
+                </p>
+            </div>
+            <div class="card card-anywhere">
+                <div class="image-bg">
+                    <img src="/assets/illustration-work-anywhere.svg" alt="Anywhere" />
+                </div>
+                <h3>Work from anywhere</h3>
+                <p>
+                    Selling online means not being pinned down. Want to work AND travel? Go for it!
+                </p>
+            </div>
+        </section>
+        <section class="pricing">
+            <div class="pricing-txt">
+                <h2>Our pricing plans</h2>
+                <p>
+                    We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get started.
+                </p>
+            </div>
+            <div class="pricing-card pricing-card-free">
+                <img src="/assets/icon-free.svg" alt="icon free" class="icon-free" />
+                <h3>Dip your toe</h3>
+                <p>
+                    Just getting started? No problem at all! Our free plan will take you a long way.
+                </p>
+                <h1>Free</h1>
+                <ul>
+                    <li><i class="fas fa-check"></i>&nbsp; Unlimited products</li>
+                    <li><i class="fas fa-check"></i>&nbsp; Basic analytics</li>
+                    <li>
+                        <i class="fas fa-check"></i>&nbsp; Limited marketplace exposure
+                    </li>
+                    <li><i class="fas fa-check"></i>&nbsp; 10% fee per transaction</li>
+                </ul>
+            </div>
+            <div class="pricing-card pricing-card-25">
+                <img src="/assets/icon-paid.svg" alt="icon paid" class="icon-paid" />
+
+                <h3>Dive right in</h3>
+                <p>
+                    Ready for the big time? Our paid plan will help you take your business to the next level.
+                </p>
+                <h1>$25.00 <span>/month</span></h1>
+                <ul>
+                    <li><i class="fas fa-check"></i>&nbsp; Custom domain</li>
+                    <li>
+                        <i class="fas fa-check"></i>&nbsp; Advanced analytics and reports
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>&nbsp; High marketplace visibility
+                    </li>
+                    <li><i class="fas fa-check"></i>&nbsp; 5% fee per transaction</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-txt">
+            <h2>Get notified when we launch</h2>
+        </div>
+        <form action="">
+            <input type="email" name="email" id="emailField" placeholder="Email adress" />
+            <input id="button" type="button" value="Get notified" />
+            <div id="response"></div>
+        </form>
+    </footer>
+    <script src="/js/scripts.js"></script>
+</body>
+
 </html>
