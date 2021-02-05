@@ -12,6 +12,6 @@ button.addEventListener("click", function() {
 });
 
 function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // RegEx check for ___@___.___ format
     return re.test(String(email).toLowerCase());
 }
