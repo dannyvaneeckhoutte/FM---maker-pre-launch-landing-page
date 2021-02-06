@@ -5,9 +5,9 @@ var response = document.getElementById("response");
 button.addEventListener("click", function() {
     var email = emailField.value;
     if (validateEmail(email)) {
-        response.innerHTML = "Hiya Cowboy, this email will work for us 🤠";
+        response.innerHTML = "";
     } else {
-        response.innerHTML = "Sorry, this email is not cool enough 😩";
+        response.innerHTML = "Oops! That doesn’t look like an email address";
     }
 });
 

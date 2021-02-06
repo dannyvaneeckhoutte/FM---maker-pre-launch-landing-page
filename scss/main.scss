@@ -8,209 +8,221 @@ $blue-med: #093f68;
 $blue-light: #3ee9e5;
 $red: #ff2965;
 // Typography
-$font-family: "Manrope", sans-serif;
-
+$font-family: "Manrope",
+sans-serif;
 h1,
 h2,
 h3 {
-	font-weight: 800;
-	color: $white;
-	margin: 0;
+    font-weight: 800;
+    color: $white;
+    margin: 0;
 }
 
 h1 {
-	font-size: 32px;
-	line-height: 40px;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 h2 {
-	font-size: 24px;
-	line-height: 32.8px;
+    font-size: 24px;
+    line-height: 32.8px;
 }
 
 h3 {
-	font-size: 18px;
-	line-height: 24.6px;
+    font-size: 18px;
+    line-height: 24.6px;
 }
 
 p {
-	font-weight: 200;
-	font-size: 15px;
-	color: $grey;
+    font-weight: 200;
+    font-size: 15px;
+    color: $grey;
 }
 
 // Styling
-
 body {
-	font-family: $font-family;
-	background: $black;
-	color: $grey;
-	line-height: 25px;
-	text-align: center;
+    font-family: $font-family;
+    background: $black;
+    color: $grey;
+    line-height: 25px;
+    text-align: center;
 }
 
 header {
-	.logo {
-		padding: 40px 0 50px;
-	}
+    .logo {
+        padding: 40px 0 50px;
+    }
 }
 
 .hero {
-	.hero-img {
-		width: 100vw;
-	}
-	.hero-txt {
-		padding: 0 24px;
-	}
-	h1 {
-		padding: 40px 30px 0;
-		span {
-			color: $blue-light;
-		}
-	}
-	p {
-		padding: 15px 0 20px;
-	}
+    .hero-img {
+        width: 100vw;
+    }
+    .hero-txt {
+        padding: 0 24px;
+    }
+    h1 {
+        padding: 40px 30px 0;
+        span {
+            color: $blue-light;
+        }
+    }
+    p {
+        padding: 15px 0 20px;
+    }
 }
 
 main {
-	padding: 20px;
-	section {
-		padding-top: 80px;
-		&.features {
-			margin-bottom: 3rem;
-			.card {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				padding: 0.2rem;
-				.image-bg {
-					display: inline-block;
-					width: 120px;
-					height: 124px;
-					border-radius: 2.8rem;
-					background-color: $blue-med;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					margin: 2rem;
-					img {
-						width: 60%;
-						padding: 1.2rem;
-					}
-				}
-			}
-		}
-		&.pricing {
-			h2 {
-				margin-bottom: 1.6rem;
-			}
-			.pricing-card {
-				text-align: left;
-				padding: 0.2rem 1.8rem 0;
-				border-radius: 0.6rem;
-				.icon-free,
-				.icon-paid {
-					position: relative;
-				}
-				.icon-free {
-					top: -1.8rem;
-				}
-				.icon-paid {
-					top: -6rem;
-				}
-				h1 {
-					font-size: 40px;
-					margin: 4rem 0 1.5rem;
-				}
-				p {
-					color: $white;
-				}
-				ul {
-					padding: 0 0 1.4rem;
-					list-style: none;
-					li {
-						color: $white;
-						padding: 0.35rem 0;
-						.fas {
-							color: $blue-light;
-							font-size: 0.7rem;
-							margin-right: 0.6rem;
-						}
-					}
-				}
-				&.pricing-card-free {
-					background-color: $blue-med;
-					margin-top: 5rem;
-					h3 {
-						margin-top: 3rem;
-					}
-				}
-				&.pricing-card-25 {
-					background: $blue-light;
-					padding-top: 4rem;
-					margin-top: 4rem;
-					h3,
-					h1,
-					p,
-					li {
-						color: $black;
-					}
-					span {
-						padding-left: 0.4rem;
-						font-size: 15px;
-						font-weight: 200;
-					}
-					h1 {
-						display: flex;
-						margin-top: 2rem;
-					}
-					.fas {
-						color: $blue-med;
-					}
-				}
-			}
-		}
-	}
+    padding: 20px;
+    section {
+        padding-top: 80px;
+        &.features {
+            margin-bottom: 3rem;
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0.2rem;
+                .image-bg {
+                    display: inline-block;
+                    width: 120px;
+                    height: 124px;
+                    border-radius: 2.8rem;
+                    background-color: $blue-med;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2rem;
+                    img {
+                        width: 60%;
+                        padding: 1.2rem;
+                    }
+                }
+            }
+        }
+        &.pricing {
+            h2 {
+                margin-bottom: 1.6rem;
+            }
+            .pricing-card {
+                text-align: left;
+                padding: 0.2rem 1.8rem 0;
+                border-radius: 0.6rem;
+                .icon-free,
+                .icon-paid {
+                    position: relative;
+                }
+                .icon-free {
+                    top: -1.8rem;
+                }
+                .icon-paid {
+                    top: -6rem;
+                }
+                h1 {
+                    font-size: 40px;
+                    margin: 4rem 0 1.5rem;
+                }
+                p {
+                    color: $white;
+                }
+                ul {
+                    padding: 0 0 1.4rem;
+                    list-style: none;
+                    li {
+                        color: $white;
+                        padding: 0.35rem 0;
+                        .fas {
+                            color: $blue-light;
+                            font-size: 0.7rem;
+                            margin-right: 0.6rem;
+                        }
+                    }
+                }
+                &.pricing-card-free {
+                    background-color: $blue-med;
+                    margin-top: 5rem;
+                    h3 {
+                        margin-top: 3rem;
+                    }
+                }
+                &.pricing-card-25 {
+                    background: $blue-light;
+                    padding-top: 4rem;
+                    margin-top: 4rem;
+                    h3,
+                    h1,
+                    p,
+                    li {
+                        color: $black;
+                    }
+                    span {
+                        padding-left: 0.4rem;
+                        font-size: 15px;
+                        font-weight: 200;
+                    }
+                    h1 {
+                        display: flex;
+                        margin-top: 2rem;
+                    }
+                    .fas {
+                        color: $blue-med;
+                    }
+                }
+            }
+        }
+    }
 }
 
 footer {
-	margin-top: 5rem;
-	padding: 1rem;
-	.footer-txt {
-		padding: 0 3rem;
-	}
-	form {
-		display: flex;
-		flex-direction: column;
-		margin-top: 1rem;
-		width: 327px;
-		input {
-			user-select: none;
-			padding: 1rem;
-			border: 2px transparent;
-			border-radius: 2rem;
-			margin: 0.8rem 0;
-			font-weight: 800;
-			font-size: inherit;
-			&:focus {
-				background-color: $blue-med;
-			}
-			&[type="email"] {
-				background-color: $blue-med;
-				color: $white;
-			}
-			&[type="button"] {
-				background-color: $blue-light;
-				cursor: pointer;
-				color: $black;
-				&:hover {
-					background-color: $black;
-					color: $white;
-					border: 2px solid $blue-light;
-				}
-			}
-		}
-	}
+    padding: 5rem 1rem 5rem;
+    background-image: url(../assets/bg-footer-squiggle.svg);
+    .footer-txt {
+        padding: 0 3rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        input {
+            padding: 1rem;
+            border: 2px transparent;
+            border-radius: 2rem;
+            margin: 0.8rem auto;
+            font-weight: 800;
+            font-size: inherit;
+            &:focus {
+                background-color: $blue-med;
+            }
+            &[type="email"] {
+                background-color: $blue-med;
+                color: $white;
+                width: 320px;
+            }
+            &[type="button"] {
+                background-color: $blue-light;
+                cursor: pointer;
+                color: $black;
+                width: 320px;
+                margin: 0 auto;
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    border: 2px solid $blue-light;
+                }
+            }
+        }
+        #response {
+            color: $red;
+            font-size: 12px;
+        }
+    }
+}
+
+// Tablet
+@media only screen and (min-width: 768px) {
+    header {
+        text-align: left;
+        padding-left: 30px;
+    }
 }
